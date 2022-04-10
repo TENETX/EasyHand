@@ -1,0 +1,23 @@
+import pandas as pd 
+
+df0 = pd.read_csv('old.csv')
+df1 = pd.read_csv('young.csv')
+df2 = pd.read_csv('man.csv')
+df3 = pd.read_csv('woman.csv')
+df4 = pd.read_csv('smile.csv')
+df5 = pd.read_csv('sad.csv')
+df6 = pd.read_csv('cartoon.csv')
+df7 = pd.read_csv('todo.csv')
+df8 = pd.read_csv('clear.csv')
+df9 = pd.read_csv('selfie.csv')
+
+df10 = df0.append(df1)
+df11 = df10.append(df2)
+df12 = df11.append(df3)
+df13 = df12.append(df4)
+df14 = df13.append(df5)
+df15 = df14.append(df6)
+df16 = df15.append(df7)
+df17 = df16.append(df8)
+df18 = df17.append(df9)
+df18.to_csv("dataset321.csv")
